@@ -1,6 +1,12 @@
-header {
-    
-    width: 1208px;
-    height: 42px;
 
+
+
+header{
+  min-width: 800px;
+}
+.header__logo{
+    padding-top: 8px;
+}
+.header__logo a {
+  text-decoration: none;
 }
