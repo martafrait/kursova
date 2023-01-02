@@ -1,12 +1,33 @@
-
-
-
-header{
+.header{
   min-width: 800px;
-}
-.header__logo{
+  a{
+    color: black;
+    text-decoration: none;
+    
+ } 
+
+  a{
+    :hover {
+            color: grey;
+        }
+ }
+  
+
+&__logo{
     padding-top: 8px;
 }
-.header__logo a {
+&__logo a {
   text-decoration: none;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  z-index: 20;
+  
+}
+}
+.header__nav {
+    @media screen and (max-width:600px) {
+        display: none;
+    }
+   
 }
