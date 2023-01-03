@@ -1,43 +1,5 @@
 .header {
     font-family: Garamond;
-
-
-    &__logo {
-        padding-top: 8px;
-    }
-
-    &__logo a {
-        text-decoration: none;
-        color: $var1;
-        font-weight: 600;
-
-        @media screen and(max-width:768px) {
-            position: fixed;
-            left: 10px;
-            z-index: 20;
-        }
-
-
-    }
-
-    &__nav {
-        @media screen and (max-width:7680px) {
-            display: none;
-        }
-
-        li {
-            :hover {
-                color: grey;
-            }
-
-            a {
-                color: $var1;
-            }
-        }
-    }
 }
-&__social{
-    @media screen and(max-width:992px) {
-        display: none;
-    }
-}
+
+   
