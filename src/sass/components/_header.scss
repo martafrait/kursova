@@ -1,33 +1,43 @@
-.header{
-  min-width: 800px;
-  a{
-    color: black;
-    text-decoration: none;
-    
- } 
+.header {
+    font-family: Garamond;
 
-  a{
-    :hover {
-            color: grey;
+
+    &__logo {
+        padding-top: 8px;
+    }
+
+    &__logo a {
+        text-decoration: none;
+        color: $var1;
+        font-weight: 600;
+
+        @media screen and(max-width:768px) {
+            position: fixed;
+            left: 10px;
+            z-index: 20;
         }
- }
-  
 
-&__logo{
-    padding-top: 8px;
+
+    }
+
+    &__nav {
+        @media screen and (max-width:7680px) {
+            display: none;
+        }
+
+        li {
+            :hover {
+                color: grey;
+            }
+
+            a {
+                color: $var1;
+            }
+        }
+    }
 }
-&__logo a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  position: relative;
-  z-index: 20;
-  
-}
-}
-.header__nav {
-    @media screen and (max-width:600px) {
+&__social{
+    @media screen and(max-width:992px) {
         display: none;
     }
-   
 }
